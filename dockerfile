@@ -1,3 +1,4 @@
+# this image has 884MB size
 FROM golang:1.21-bookworm
 
 RUN mkdir -p /home/app
