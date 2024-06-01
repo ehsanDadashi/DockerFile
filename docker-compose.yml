@@ -1,0 +1,7 @@
+services:
+  golang-app:
+    image: alpine:3.20
+    command: sh -c "./main"
+    ports:
+      - 8081:8081
+    working_dir: /app
