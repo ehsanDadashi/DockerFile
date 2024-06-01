@@ -5,10 +5,9 @@ RUN mkdir -p /home/app
 WORKDIR /home/app
 COPY . /home/app
 RUN go mod init main
-# this line create an executable binary file 
 RUN CGO_ENABLED=0 go build
 
 FROM alpine:3.20
 WORKDIR /app
 COPY --from=builder /home/app /app
-CMD ["./main"]
+CMD ["/app/main"]
