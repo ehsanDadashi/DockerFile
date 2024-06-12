@@ -9,6 +9,7 @@
   and then copy binary file to alpine image and create a 14M image.
 # build docker file 
   first go to dockerfile directory and then run this command:
+  
   docker build -t multi:3.0 .
 # docker-compose.yml :
   it is a simple compose file to run the above image
